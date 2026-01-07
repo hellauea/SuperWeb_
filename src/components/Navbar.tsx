@@ -70,7 +70,11 @@ const Navbar = () => {
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           className="md:hidden p-2 text-foreground"
         >
-          {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          {isMobileMenuOpen ? (
+            <X className="w-6 h-6" />
+          ) : (
+            <Menu className="w-6 h-6" />
+          )}
         </button>
       </nav>
 
@@ -82,7 +86,7 @@ const Navbar = () => {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden bg-background/95 backdrop-blur-xl border-b border-border"
+            className="md:hidden bg-background/95 backdrop-blur-xl border-b border-border pointer-events-auto"
           >
             <div className="container-custom py-6 px-4 flex flex-col gap-4">
               {navLinks.map((link, index) => (
@@ -98,14 +102,17 @@ const Navbar = () => {
                   {link.label}
                 </motion.a>
               ))}
-              <AnimatedButton
+
+              {/* Mobile CTA Fallback */}
+              <a
                 href={WHATSAPP_URL}
-                external
-                variant="primary"
-                className="w-full text-center justify-center mt-4"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="block w-full bg-primary text-white text-center py-3 rounded-lg mt-4"
               >
                 Get Started
-              </AnimatedButton>
+              </a>
             </div>
           </motion.div>
         )}
