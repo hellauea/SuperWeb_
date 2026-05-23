@@ -9,7 +9,6 @@ const navLinks = [
   { label: "Services", href: "#services" },
   { label: "Apps", href: "#app-pricing" },
   { label: "Websites", href: "#website-pricing" },
-  { label: "Portfolio", href: "#portfolio" },
   { label: "AI", href: "#ai" },
 ];
 

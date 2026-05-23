@@ -10,7 +10,6 @@ import AppPricingSection from "@/components/sections/AppPricingSection";
 import WhyAppsSection from "@/components/sections/WhyAppsSection";
 import AISection from "@/components/sections/AISection";
 import ServicesSection from "@/components/sections/ServicesSection";
-import PortfolioSection from "@/components/sections/PortfolioSection";
 import WhyChooseSection from "@/components/sections/WhyChooseSection";
 import CTASection from "@/components/sections/CTASection";
 
@@ -65,13 +64,10 @@ const Index = () => {
         {/* 7. Services - What SUPERWEB Builds */}
         <ServicesSection />
         
-        {/* 8. Portfolio - Past Work */}
-        <PortfolioSection />
-        
-        {/* 9. Why Choose SUPERWEB */}
+        {/* 8. Why Choose SUPERWEB */}
         <WhyChooseSection />
         
-        {/* 10. Final CTA */}
+        {/* 9. Final CTA */}
         <CTASection />
       </main>
 
