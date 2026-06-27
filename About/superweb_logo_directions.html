@@ -1,0 +1,105 @@
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Space+Grotesk:wght@700&family=DM+Sans:wght@700;900&display=swap');
+  .logo-wrap { padding: 1.5rem 0; }
+  .logo-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 1rem; }
+  .logo-card { border: 0.5px solid var(--border); border-radius: 16px; overflow: hidden; }
+  .logo-preview { height: 180px; display: flex; align-items: center; justify-content: center; padding: 2rem; }
+  .logo-info { padding: 14px 16px; border-top: 0.5px solid var(--border); background: var(--surface-1); }
+  .logo-label { font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: .08em; color: var(--text-muted); margin-bottom: 4px; }
+  .logo-name { font-size: 14px; font-weight: 500; color: var(--text-primary); margin-bottom: 3px; }
+  .logo-desc { font-size: 12px; color: var(--text-secondary); line-height: 1.5; }
+
+  .dir-a-bg { background: #0a0a0f; }
+  .dir-b-bg { background: #ffffff; border-bottom: 0.5px solid var(--border); }
+  .dir-c-bg { background: #0f0c2e; }
+
+  .dir-a-logo { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 28px; color: #fff; letter-spacing: -1px; display: flex; align-items: center; gap: 0; }
+  .dir-a-s { color: #ff4d00; }
+  .dir-a-dot { width: 8px; height: 8px; background: #ff4d00; border-radius: 50%; margin-left: 3px; margin-bottom: 18px; display: inline-block; }
+
+  .dir-b-logo { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 26px; color: #0a0a0f; letter-spacing: -0.5px; display: flex; flex-direction: column; gap: 0; align-items: flex-start; }
+  .dir-b-mark { width: 36px; height: 36px; background: #0a0a0f; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 8px; }
+  .dir-b-sw { display: grid; grid-template-columns: 1fr 1fr; gap: 3px; padding: 7px; }
+  .dir-b-sq { background: #fff; border-radius: 2px; }
+
+  .dir-c-logo { font-family: 'DM Sans', sans-serif; font-weight: 900; font-size: 30px; letter-spacing: -1.5px; display: flex; align-items: center; }
+  .dir-c-super { color: #fff; }
+  .dir-c-web { color: #7c6cff; }
+  .dir-c-ring { width: 44px; height: 44px; border-radius: 50%; border: 3px solid #7c6cff; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0; }
+  .dir-c-inner { width: 20px; height: 20px; background: #7c6cff; border-radius: 50%; }
+</style>
+
+<div class="logo-wrap">
+  <div class="logo-row">
+
+    <div class="logo-card">
+      <div class="logo-preview dir-a-bg">
+        <div style="text-align:center">
+          <div class="dir-a-logo">
+            <span class="dir-a-s">S</span><span>UPERWEB</span><span class="dir-a-dot"></span>
+          </div>
+          <div style="font-family:'Syne',sans-serif;font-size:10px;color:rgba(255,255,255,0.4);letter-spacing:.25em;margin-top:4px;text-transform:uppercase">We Build. You Grow.</div>
+        </div>
+      </div>
+      <div class="logo-info">
+        <div class="logo-label">Direction A</div>
+        <div class="logo-name">Blaze</div>
+        <div class="logo-desc">Dark background. Electric orange-red on the S. Tight all-caps wordmark. Aggressive, startup energy. Memorable at any size.</div>
+      </div>
+    </div>
+
+    <div class="logo-card">
+      <div class="logo-preview dir-b-bg">
+        <div style="text-align:left">
+          <div class="dir-b-mark">
+            <div class="dir-b-sw">
+              <div class="dir-b-sq" style="height:9px"></div>
+              <div class="dir-b-sq" style="height:9px"></div>
+              <div class="dir-b-sq" style="height:9px"></div>
+              <div class="dir-b-sq" style="height:9px;background:#0a0a0f;border:1.5px solid rgba(0,0,0,0.15)"></div>
+            </div>
+          </div>
+          <div class="dir-b-logo">
+            <span>SuperWeb</span>
+          </div>
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:10px;color:#888;letter-spacing:.15em;margin-top:3px;text-transform:uppercase">We Build. You Grow.</div>
+        </div>
+      </div>
+      <div class="logo-info">
+        <div class="logo-label">Direction B</div>
+        <div class="logo-name">Grid</div>
+        <div class="logo-desc">White background. 2×2 grid icon — nods to web layouts and app grids. Clean, trustworthy. Great for school clients who want professionalism.</div>
+      </div>
+    </div>
+
+    <div class="logo-card">
+      <div class="logo-preview dir-c-bg">
+        <div style="text-align:center">
+          <div style="display:flex;align-items:center;justify-content:center;margin-bottom:6px">
+            <div class="dir-c-ring">
+              <div class="dir-c-inner"></div>
+            </div>
+            <div class="dir-c-logo">
+              <span class="dir-c-super">SUPER</span><span class="dir-c-web">WEB</span>
+            </div>
+          </div>
+          <div style="font-family:'DM Sans',sans-serif;font-size:10px;color:rgba(255,255,255,0.35);letter-spacing:.2em;text-transform:uppercase">We Build. You Grow.</div>
+        </div>
+      </div>
+      <div class="logo-info">
+        <div class="logo-label">Direction C</div>
+        <div class="logo-name">Orbit</div>
+        <div class="logo-desc">Deep navy + violet. Circular mark with a filled core — feels techy, modern, forward-thinking. Two-tone wordmark splits SUPER and WEB for visual rhythm.</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="display:flex;gap:8px;flex-wrap:wrap">
+    <button onclick="sendPrompt('I choose logo direction A — Blaze')">A — Blaze ↗</button>
+    <button onclick="sendPrompt('I choose logo direction B — Grid')">B — Grid ↗</button>
+    <button onclick="sendPrompt('I choose logo direction C — Orbit')">C — Orbit ↗</button>
+    <button onclick="sendPrompt('I want to see variations of all three before choosing')">Show me more variations ↗</button>
+  </div>
+</div>
