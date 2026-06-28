@@ -54,7 +54,9 @@ export const AIDemo = () => {
 
   // Scroll to bottom on new messages
   useEffect(() => {
-    chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
+    if (messages.length > 1 || isTyping) {
+      chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
+    }
   }, [messages, isTyping]);
 
   const handleSendMessage = async (text: string) => {
